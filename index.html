@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mood Maker</title>
+
+
+	<!--------CSS--------------------------->
+	<style type="text/css">
+		.face{
+			position: absolute;
+			left: 50%;
+			bottom: 50px;
+			width: 300px;
+			height: 300px;
+			background: url('../img/happy.png') no-repeat 0 0;
+
+		}
+
+		.face.happy{
+			position: absolute;
+			left: 50%;
+			bottom: 50px;
+			width: 300px;
+			height: 300px;
+			background: url('../img/happy.png') no-repeat 0 0;
+		}
+
+
+		.face.sad{
+			position: absolute;
+			left: 50%;
+			bottom: 50px;
+			width: 300px;
+			height: 300px;
+			background: url('../img/sad.png') no-repeat 0 0;
+
+
+		}
+
+
+		.face.mad{
+			position: absolute;
+			left: 50%;
+			bottom: 50px;
+			width: 300px;
+			height: 300px;
+			background: url('../img/mad.png') no-repeat 0 0;
+
+
+		}
+		
+
+
+	</style>
+
+
+	<!--------JavaScript--------------------------->
+	<script type="text/javascript">
+		
+		var happy = function () {
+			var currentClassName = document.getElementById('face').className;
+			document.getElementById('face').className = 'face happy';
+		}
+
+		var sad = function () {
+			var currentClassName = document.getElementById('face').className;
+			document.getElementById('face').className = 'face sad';
+		}
+
+		var mad = function () {
+			var currentClassName = document.getElementById('face').className;
+			document.getElementById('face').className = 'face mad';
+		}
+	</script>
+
+	<!--------Divisions--------------------------->
+
+	<div class="face" id="face"></div>
+</head>
+<body>
+
+</body>
+</html>
